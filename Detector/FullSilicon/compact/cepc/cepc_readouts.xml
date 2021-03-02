@@ -1,0 +1,15 @@
+<lccdd>
+  <define>
+  </define>
+  <readouts>
+    <!---FTD readout -->
+    <readout name="SVtCollection">
+      <segmentation type="CartesianGridXY" grid_size_x="0.05*mm" grid_size_y="0.05*mm"/>
+      <id>system:6,layer:6,stave:6,module:7,sensor:6,x:32:-16,y:-16</id>
+    </readout>
+    <readout name="EndCap_readouts">
+      <segmentation type="CartesianGridXY" grid_size_x="0.05*mm" grid_size_y="0.05*mm"/>
+      <id>system:6,disk:5,ring:4,module:8,sensor:6,x:32:-16,y:-16</id>
+    </readout>
+  </readouts>
+</lccdd>

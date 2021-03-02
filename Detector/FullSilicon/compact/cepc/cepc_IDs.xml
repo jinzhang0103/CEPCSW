@@ -1,0 +1,28 @@
+<define>
+  <constant name="Beampipe_ID" value="0"/> 
+  <!-- Correction from going from inner circle to outer circle -->
+  <constant name="Vt_ID" value="100"/>
+  <constant name="EIT_ID_neg" value="101"/>
+  <constant name="EIT_ID_pos" value="102"/>
+
+  <constant name="SOT_ID_1" value="200"/>
+  <constant name="EOT_ID_neg_1" value="103"/>
+  <constant name="EOT_ID_pos_1" value="104"/>
+
+  <constant name="SOT_ID_2" value="300"/>
+  <constant name="EOT_ID_neg_2" value="105"/>
+  <constant name="EOT_ID_pos_2" value="106"/>
+
+  <constant name="SOT_ID_3" value="400"/>
+  <constant name="EOT_ID_neg_3" value="107"/>
+  <constant name="EOT_ID_pos_3" value="108"/>
+
+  <constant name="SOT_ID_4" value="500"/>
+  <constant name="EOT_ID_neg_4" value="109"/>
+  <constant name="EOT_ID_pos_4" value="110"/>
+
+  <constant name="SOT_ID_5" value="600"/>
+  <constant name="EOT_ID_neg_5" value="111"/>
+  <constant name="EOT_ID_pos_5" value="112"/>
+  </define>
+

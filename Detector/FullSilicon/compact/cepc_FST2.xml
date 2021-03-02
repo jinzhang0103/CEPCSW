@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<lccdd xmlns:compact="http://www.lcsim.org/schemas/compact/1.0"
+       xmlns:xs="http://www.w3.org/2001/XMLSchema"
+       xs:noNamespaceSchemaLocation="http://www.lcsim.org/schemas/compact/1.0/compact.xsd">
+
+  <includes>
+    <gdmlFile  ref="cepc/CEPC_elements.xml"/>
+    <gdmlFile  ref="cepc/CEPC_materials.xml"/>
+  </includes>
+
+  <info name="cepc_det"
+        title="cepc Full silicon tracker"
+        author="Y.H"
+        url="no."
+        status="development"
+        version="V04">
+    <comment>the FST  detector for cepc</comment>
+  </info>
+ 
+  <define>
+    <constant name="world_side" value="10000*mm"/>
+    <constant name="world_x" value="world_side"/>
+    <constant name="world_y" value="world_side"/>
+    <constant name="world_z" value="world_side"/>
+  </define>
+  <include ref="cepc/cepc_IDs.xml"/> 
+  <include ref="cepc/cepc_Display.xml"/>
+  <include ref="cepc/cepc_readouts.xml"/>
+  <include ref="cepc/cepc_VXD_SOT.xml"/>
+  <include ref="cepc/cepc_EIT_EOT.xml"/>
+  <!--
+  -->
+  <detectors>
+    <detector id="0" name="BeamPipe" type="cepc_beampipe" vis="red">
+      <beampipe/>
+      <tubs name="BeamPipeCylinder" rmin="13.0*mm" rmax="13.5*mm" dz="2470.0*mm" material="Beryllium">
+	  <layer_material surface="representing" binning="binPhi,binZ" bins0="1" bins1="25"/>
+      </tubs>
+    </detector>
+    <detector id="1" name="FST_VXD_EIT" type="DD4hep_SubdetectorAssembly" vis="Invisible">
+      <composite name="Silicon_vertex_Barrel"/>
+      <composite name="EIT_endcap_neg1"/>
+      <composite name="EIT_endcap_pos1"/>
+    </detector>
+    <detector id="2" name="SOT_EOT_1" type="DD4hep_SubdetectorAssembly" vis="Invisible">
+      <composite name="Silicon_SOT_Barrel_1"/>
+      <composite name="EOT_endcap_neg1"/>
+      <composite name="EOT_endcap_pos1"/>
+    </detector>
+<!--
+-->
+    <detector id="3" name="SOT_EOT_2" type="DD4hep_SubdetectorAssembly" vis="Invisible">
+      <composite name="Silicon_SOT_Barrel_2"/>
+      <composite name="EOT_endcap_neg2"/>
+      <composite name="EOT_endcap_pos2"/>
+    </detector>
+
+    <detector id="4" name="SOT_EOT_3" type="DD4hep_SubdetectorAssembly" vis="Invisible">
+      <composite name="Silicon_SOT_Barrel_3"/>
+      <composite name="EOT_endcap_neg3"/>
+      <composite name="EOT_endcap_pos3"/>
+    </detector>
+    <detector id="5" name="SOT_EOT_4" type="DD4hep_SubdetectorAssembly" vis="Invisible">
+      <composite name="Silicon_SOT_Barrel_4"/>
+      <composite name="EOT_endcap_neg4"/>
+      <composite name="EOT_endcap_pos4"/>
+    </detector>
+<!--
+-->
+  </detectors>
+</lccdd>

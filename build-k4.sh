@@ -20,8 +20,8 @@ function error:() {
 }
 
 function check-cepcsw-envvar() {
-    # source /cvmfs/sw.hsf.org/key4hep/setup.sh
-    source /cvmfs/sw-nightlies.hsf.org/key4hep/setup.sh
+     source /cvmfs/sw.hsf.org/key4hep/setup.sh
+    #source /cvmfs/sw-nightlies.hsf.org/key4hep/setup.sh
     # fix the order of compiler
     local ccdir=$(dirname $CC)
     export PATH=$ccdir:$PATH
@@ -75,28 +75,30 @@ function run-cmake() {
 
     cd $blddir
 
-    # locate the pandorapfa
-    local pandorapfa=$(echo $CMAKE_PREFIX_PATH | tr ':' '\n' | grep pandorapfa | head -n1)
-    info: "Find PandoraPFA: $pandorapfa"
-    if [ -z "$pandorapfa" ]; then
-        error: "Failed to find the PandoraPFA"
-        return 1
-    fi
-    
-    local pandorapfa_cmake_modules=${pandorapfa}/cmakemodules
-    info: "Find PandoraPFA cmake: ${pandorapfa_cmake_modules}"
-    if [ ! -d "${pandorapfa_cmake_modules}" ]; then
-        error: "Failed to find the cmake modules for PandoraPFA: ${pandorapfa_cmake_modules}"
-        return 1
-    fi
+ #   # locate the pandorapfa
+ #   local pandorapfa=$(echo $CMAKE_PREFIX_PATH | tr ':' '\n' | grep pandorapfa | head -n1)
+ #   info: "Find PandoraPFA: $pandorapfa"
+ #   if [ -z "$pandorapfa" ]; then
+ #       error: "Failed to find the PandoraPFA"
+ #       return 1
+ #   fi
+ #   
+ #   local pandorapfa_cmake_modules=${pandorapfa}/cmakemodules
+ #   info: "Find PandoraPFA cmake: ${pandorapfa_cmake_modules}"
+ #   if [ ! -d "${pandorapfa_cmake_modules}" ]; then
+ #       error: "Failed to find the cmake modules for PandoraPFA: ${pandorapfa_cmake_modules}"
+ #       return 1
+ #   fi
 
-    local cmake_modules=${pandorapfa_cmake_modules}
+ #   local cmake_modules=${pandorapfa_cmake_modules}
 
-    cmake .. -DHOST_BINARY_TAG=${k4_platform} ${bldgen} \
-          -DCMAKE_MODULE_PATH=${cmake_modules} || {
-        error: "Failed to cmake"
-        return 1
-    }
+    cmake  -DActs_DIR=/besfs5/users/zhangjin/cepc/acts/lib64/cmake/acts -DHOST_BINARY_TAG=${k4_platform} ${bldgen}  ..
+
+    #cmake .. -DActs_DIR=/besfs5/users/zhangjin/cepc/acts/lib64/cmake/acts -DHOST_BINARY_TAG=${k4_platform} ${bldgen} \
+    #      -DCMAKE_MODULE_PATH=${cmake_modules} || {
+    #    error: "Failed to cmake"
+    #    return 1
+    #}
 
 }
 
@@ -113,10 +115,10 @@ k4_platform=x86_64-linux-gcc9-opt
 k4_version=master
 bldtool=${CEPCSW_BLDTOOL} # make, ninja # set in env var
 
-check-cepcsw-envvar || exit -1
+#check-cepcsw-envvar || exit -1
 
-check-working-builddir || exit -1
+#check-working-builddir || exit -1
 
-run-cmake || exit -1
+#run-cmake || exit -1
 
-run-make || exit -1
+#run-make || exit -1

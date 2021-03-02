@@ -96,10 +96,18 @@ lcg_version=98.0.0
 
 bldtool=${CEPCSW_BLDTOOL} # make, ninja # set in env var
 
-check-cepcsw-envvar || exit -1
+#check-cepcsw-envvar || exit -1
+#
+#check-working-builddir || exit -1
+#
+#run-cmake || exit -1
+#
+#run-make || exit -1
 
-check-working-builddir || exit -1
-
-run-cmake || exit -1
-
-run-make || exit -1
+#check-cepcsw-envvar  || exit -1
+#
+#check-working-builddir  || exit -1
+#
+#run-cmake || exit -1
+#
+#run-make  || exit -1

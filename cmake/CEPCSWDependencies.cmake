@@ -18,6 +18,8 @@ Find all the dependencies here, so in each package user don't need to find the p
 - ROOT
 #]]
 
+find_package(Acts 5.0.0 REQUIRED COMPONENTS Core PluginTGeo PluginDD4hep)
+#find_package(Acts 5.0.0 REQUIRED) 
 find_package(CLHEP REQUIRED;CONFIG)
 find_package(DD4hep COMPONENTS DDCore DDG4 DDParsers DDRec REQUIRED)
 find_package(EDM4HEP REQUIRED)
@@ -32,3 +34,6 @@ find_package(PandoraSDK REQUIRED)
 find_package(podio REQUIRED)
 find_package(ROOT COMPONENTS EG Graf Graf3d Gpad MathCore Net RIO Tree TreePlayer REQUIRED)
 find_package(GenFit)
+#find_package(Eigen 3.2.9 REQUIRED)
+#find_package(Acts REQUIRED COMPONENTS Core IdentificationPlugin TGeoPlugin DD4hepPlugin DigitizationPlugin)
+find_package(nlohmann_json 3.2.0 REQUIRED)

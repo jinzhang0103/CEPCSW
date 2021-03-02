@@ -31,6 +31,7 @@ function cepcsw-external() {
 
 function setup-external() {
     local f=$(cepcsw-external)/setup-${CEPCSW_LCG_VERSION}.sh
+    #local f=$(cepcsw-external)/setup.sh
     if [ ! -f $f ]; then
         error: "Failed to find setup script $f"
         return

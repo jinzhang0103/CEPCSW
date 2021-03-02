@@ -1,0 +1,3 @@
+add_subdirectory(Detectors)
+#add_subdirectory(ActsCepcJsonPlugin)
+add_subdirectory(DD4hepPropagationExample)

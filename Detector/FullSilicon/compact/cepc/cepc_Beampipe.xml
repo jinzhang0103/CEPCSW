@@ -1,0 +1,6 @@
+<!-- the beam pipe : only a Be tube-->
+<detectors>
+  <detector id="Beampipe_ID" name="beampipe" type="CEPC_beampipe">
+      <dimensions rmin="14*mm" rmax="14.5*mm" z="2470*mm" material="Beryllium" vis="violet"/>
+  </detector>
+</detectors>

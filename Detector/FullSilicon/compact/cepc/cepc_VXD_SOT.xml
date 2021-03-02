@@ -1,0 +1,100 @@
+<detectors>
+  <detector id="Vt_ID" name="Silicon_vertex_Barrel" type="cepc_common" readout="SVtCollection" vis="invisible">
+    <dimensions rmin="13.9*mm" rmax="105.0*mm" dz="91.1*mm"/>
+    <barrel_layer name="SVT_layer_1" inner_r="22.*mm" outer_r="35.9*mm" r="22.*mm" z="91.*mm" gap="0.0*mm" phi_gap="0.01" phi_tilt="0.09" in_layer_gap="0.2*mm" layers_gap="0.0*mm" vis="invisible">
+      <layer_material surface="representing" binning="binPhi,binZ" bins0="1" bins1="25"/>
+      <module vis="invisible">
+        <module_component name="Sensor" x1="10.0*mm" x2="10.0*mm" thickness="0.125*mm" length="11.375*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+        <module_component name="Board" x1="5.0*mm" x2="5.0*mm" thickness="0.25*mm" length="10.0*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="1.0*mm" material="Kapton" vis="grey" sensitive="flase"/> 
+        <module_component name="Connector" x1="8.0*mm" x2="8.0*mm" thickness="0.15*mm" length="6.0*mm" alpha="0.0" x_offset="-2.0*mm" y_offset="0.0*mm" z_offset="2.0*mm" material="Al" vis="orange" sensitive="flase"/>
+      </module>
+    </barrel_layer>
+    <barrel_layer name="SVT_layer_2" inner_r="38.*mm" outer_r="55.9*mm" r="38.*mm" z="91.*mm" gap="0.00*mm" phi_gap="0.05" phi_tilt="0.08" in_layer_gap="0.2*mm" layers_gap="0.0*mm" vis="invisible">
+      <layer_material surface="representing" binning="binPhi,binZ" bins0="1" bins1="25"/>
+      <module vis="invisible">
+        <module_component name="Sensor" x1="10.*mm" x2="10.*mm" thickness="0.25*mm" length="11.375*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+        <module_component name="Board" x1="5.0*mm" x2="5.0*mm" thickness="0.25*mm" length="10.0*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="1.0*mm" material="Kapton" vis="grey" sensitive="flase"/> 
+        <module_component name="Connector" x1="8.0*mm" x2="8.0*mm" thickness="0.15*mm" length="6.0*mm" alpha="0.0" x_offset="-2.0*mm" y_offset="0.0*mm" z_offset="2.0*mm" material="Al" vis="orange" sensitive="flase"/>
+      </module>
+    </barrel_layer>
+    <barrel_layer name="SVT_layer_3" inner_r="58.*mm" outer_r="77.9*mm" r="58.*mm" z="91.*mm" gap="0.00*mm" phi_gap="0.05" phi_tilt="0.07" in_layer_gap="0.2*mm" layers_gap="0.0*mm" vis="invisible">
+      <layer_material surface="representing" binning="binPhi,binZ" bins0="1" bins1="25"/>
+      <module vis="invisible">
+        <module_component name="Sensor" x1="20.*mm" x2="20.*mm" thickness="0.25*mm" length="11.375*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+        <module_component name="Board" x1="10.0*mm" x2="10.0*mm" thickness="0.25*mm" length="10.0*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="1.0*mm" material="Kapton" vis="grey" sensitive="flase"/> 
+        <module_component name="Connector" x1="8.0*mm" x2="8.0*mm" thickness="0.15*mm" length="6.0*mm" alpha="0.0" x_offset="-2.0*mm" y_offset="0.0*mm" z_offset="2.0*mm" material="Al" vis="orange" sensitive="flase"/>
+      </module>
+    </barrel_layer>
+    <barrel_layer name="SVT_layer_4" inner_r="79.*mm" outer_r="97.9*mm" r="79.*mm" z="91.*mm" gap="0.00*mm" phi_gap="0.05" phi_tilt="0.07" in_layer_gap="0.2*mm" layers_gap="0.0*mm" vis="invisible">
+      <layer_material surface="representing" binning="binPhi,binZ" bins0="1" bins1="25"/>
+      <module vis="invisible">
+        <module_component name="Sensor" x1="20.*mm" x2="20.*mm" thickness="0.25*mm" length="11.375*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+        <module_component name="Board" x1="10.0*mm" x2="10.0*mm" thickness="0.25*mm" length="10.0*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="1.0*mm" material="Kapton" vis="grey" sensitive="flase"/> 
+        <module_component name="Connector" x1="8.0*mm" x2="8.0*mm" thickness="0.15*mm" length="6.0*mm" alpha="0.0" x_offset="-2.0*mm" y_offset="0.0*mm" z_offset="2.0*mm" material="Al" vis="orange" sensitive="flase"/>
+      </module>
+    </barrel_layer>
+    <barrel_layer name="SVT_layer_5" inner_r="100.*mm" outer_r="105.*mm" r="100.*mm" z="91.*mm" gap="0.00*mm" phi_gap="0.05" phi_tilt="0.07" in_layer_gap="0.2*mm" layers_gap="0.0*mm" vis="invisible">
+      <layer_material surface="representing" binning="binPhi,binZ" bins0="1" bins1="25"/>
+      <module vis="invisible">
+        <module_component name="Sensor" x1="20.*mm" x2="20.*mm" thickness="0.25*mm" length="11.375*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+        <module_component name="Board" x1="10.0*mm" x2="10.0*mm" thickness="0.25*mm" length="12.0*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="1.0*mm" material="Kapton" vis="grey" sensitive="flase"/> 
+        <module_component name="Connector" x1="8.0*mm" x2="8.0*mm" thickness="0.15*mm" length="6.0*mm" alpha="0.0" x_offset="-2.0*mm" y_offset="0.0*mm" z_offset="2.0*mm" material="Al" vis="orange" sensitive="flase"/>
+      </module>
+    </barrel_layer>
+  </detector>
+  <detector id="SOT_ID_1" name="Silicon_SOT_Barrel_1" type="cepc_common" readout="SVtCollection" vis="invisible">
+    <dimensions rmin="343.9*mm" rmax="724.1*mm" dz="1029.1*mm"/>
+    <barrel_layer name="SOT_layer_1" inner_r="344.*mm" outer_r="350.*mm" r="344.*mm" z="793.*mm" gap="0.00*mm" phi_gap="0.02" phi_tilt="0.05" in_layer_gap="0.2*mm" layers_gap="0.0*mm" vis="invisible">
+      <layer_material surface="representing" binning="binPhi,binZ" bins0="1" bins1="25"/>
+      <module vis="invisible">
+        <module_component name="Sensor" x1="50.*mm" x2="50.*mm" thickness="0.25*mm" length="79.3*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+        <module_component name="Board" x1="30.0*mm" x2="30.0*mm" thickness="0.25*mm" length="30.0*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="1.0*mm" material="Kapton" vis="grey" sensitive="flase"/> 
+        <module_component name="Connector" x1="16.0*mm" x2="16.0*mm" thickness="0.15*mm" length="10.0*mm" alpha="0.0" x_offset="-2.0*mm" y_offset="0.0*mm" z_offset="2.0*mm" material="Al" vis="orange" sensitive="flase"/>
+      </module>
+    </barrel_layer>
+    <barrel_layer name="SOT_layer_2" inner_r="718.1*mm" outer_r="724.0*mm" r="718.1*mm" z="1025.*mm" gap="0.00*mm" phi_gap="0.00" phi_tilt="0.00" in_layer_gap="0.2*mm" layers_gap="0.*mm" vis="invisible">
+      <layer_material surface="representing" binning="binPhi,binZ" bins0="1" bins1="25"/>
+      <module vis="invisible">
+        <module_component name="Sensor" x1="70.*mm" x2="70.*mm" thickness="0.25*mm" length="51.4*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+        <module_component name="Board" x1="50.0*mm" x2="50.0*mm" thickness="0.25*mm" length="40.0*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="1.0*mm" material="Kapton" vis="grey" sensitive="flase"/> 
+        <module_component name="Connector" x1="18.0*mm" x2="18.0*mm" thickness="0.15*mm" length="26.0*mm" alpha="0.0" x_offset="-2.0*mm" y_offset="0.0*mm" z_offset="2.0*mm" material="Al" vis="orange" sensitive="flase"/>
+      </module>
+    </barrel_layer>
+  </detector>
+
+  <detector id="SOT_ID_2" name="Silicon_SOT_Barrel_2" type="cepc_common" readout="SVtCollection" vis="invisible">
+    <dimensions rmin="1080.*mm" rmax="1088.1*mm" dz="1391.*mm"/>
+    <barrel_layer name="SOT_layer_3" inner_r="1082.1*mm" outer_r="1088.*mm" r="1082.1*mm" z="1391.*mm" gap="0.00*mm" phi_gap="0.01" phi_tilt="0.07" in_layer_gap="0.2*mm" layers_gap="0.*mm" vis="invisible">
+      <layer_material surface="representing" binning="binPhi,binZ" bins0="1" bins1="25"/>
+      <module vis="invisible">
+        <module_component name="Sensor" x1="140.*mm" x2="140.*mm" thickness="0.25*mm" length="139.1*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+        <module_component name="Board" x1="80.0*mm" x2="80.0*mm" thickness="0.25*mm" length="121.0*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="1.0*mm" material="Kapton" vis="grey" sensitive="flase"/> 
+        <module_component name="Connector" x1="28.0*mm" x2="28.0*mm" thickness="0.15*mm" length="36.0*mm" alpha="0.0" x_offset="-2.0*mm" y_offset="0.0*mm" z_offset="2.0*mm" material="Al" vis="orange" sensitive="flase"/>
+      </module>
+    </barrel_layer>
+  </detector>
+  <detector id="SOT_ID_3" name="Silicon_SOT_Barrel_3" type="cepc_common" readout="SVtCollection" vis="invisible">
+    <dimensions rmin="1446.*mm" rmax="1451.1*mm" dz="1746.*mm"/>
+    <barrel_layer name="SOT_layer_4" inner_r="1446.1*mm" outer_r="1451.0*mm" r="1446.1*mm" z="1746.*mm" gap="0.00*mm" phi_gap="0.01" phi_tilt="0.07" in_layer_gap="0.2*mm" layers_gap="0.*mm" vis="invisible">
+      <layer_material surface="representing" binning="binPhi,binZ" bins0="1" bins1="25"/>
+      <module vis="invisible">
+        <module_component name="Sensor" x1="200.*mm" x2="200.*mm" thickness="0.25*mm" length="174.6*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+        <module_component name="Board" x1="100.0*mm" x2="100.0*mm" thickness="0.25*mm" length="121.0*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="1.0*mm" material="Kapton" vis="grey" sensitive="flase"/> 
+        <module_component name="Connector" x1="28.0*mm" x2="28.0*mm" thickness="0.15*mm" length="36.0*mm" alpha="0.0" x_offset="-2.0*mm" y_offset="0.0*mm" z_offset="2.0*mm" material="Al" vis="orange" sensitive="flase"/>
+      </module>
+    </barrel_layer>
+  </detector>
+  <detector id="SOT_ID_4" name="Silicon_SOT_Barrel_4" type="cepc_common" readout="SVtCollection" vis="invisible">
+    <dimensions rmin="1820.*mm" rmax="1840.1*mm" dz="2107.*mm"/>
+    <barrel_layer name="SOT_layer_5" inner_r="1820.1*mm" outer_r="1840.*mm" r="1820.1*mm" z="2107.*mm" gap="0.00*mm" phi_gap="0.00" phi_tilt="0.03" in_layer_gap="0.2*mm" layers_gap="0.*mm" vis="invisible">
+      <layer_material surface="representing" binning="binPhi,binZ" bins0="1" bins1="25"/>
+      <module vis="invisible">
+        <module_component name="Sensor" x1="400.*mm" x2="400.*mm" thickness="0.25*mm" length="300.*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="0.0*mm" material="SiliconOxide" vis="blue" sensitive="true"/>
+        <module_component name="Board" x1="100.0*mm" x2="100.0*mm" thickness="0.25*mm" length="121.0*mm" alpha="0.0" x_offset="0.0*mm" y_offset="0.0*mm" z_offset="1.0*mm" material="Kapton" vis="grey" sensitive="flase"/> 
+        <module_component name="Connector" x1="28.0*mm" x2="28.0*mm" thickness="0.15*mm" length="36.0*mm" alpha="0.0" x_offset="-2.0*mm" y_offset="0.0*mm" z_offset="2.0*mm" material="Al" vis="orange" sensitive="flase"/>
+      </module>
+    </barrel_layer>
+  </detector>
+<!--
+-->
+</detectors>
